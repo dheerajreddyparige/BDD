@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+	#element1{
+	
+	}
+	body{
+	}
+	
+</style>
+<title>Form 1</title>
+</head>
+ <body>
+ <script src="demo1.js"> </script>
+
+	
+	<form name="frm1" method="GET"  action="" onsubmit="chkEmpty()">
+	<label>company name</label> <input id="element1" type="text" name="companyName" value="" /><br/>
+	<label>enter name :</label><input type="text" name="userName" value="" placeholder="enter name" autofocus/><br/>
+	<label>enter city :</label><input type="text" name="city" value="" autofocus/><br/>
+	<label>password : </label> <input type="password" name="password" value="" /><br/>
+	<label>Gender: </label> 
+	<br/>
+	Male <input type="radio" name="gender"  value="M"/><br/>
+	Female <input type="radio" name="gender" value="F"/>
+	<br>
+	<label> languages Known</label>
+	English <input type="checkbox" name="lang" value="Eng"/><br>
+	Telugu<input type="checkbox" name="lang" value="Tel"/><br>
+	Tamil<input type="checkbox" name="lang" value="tam"/><br>
+	<br>
+	hidden : <input type="hidden" name="hidden" value="welcome my emp id is 23432"/>
+	
+	<br>
+	<textarea rows="3" cols="5"></textarea>
+	<br/>
+	<label>country: </label> 
+	<select name="country" multiple disabled>
+		<option>select</option>
+		<option selected>IND</option>
+		<option>US</option>
+		<option>UK</option>
+		<option>IRAN</option>
+		<option>IRAQ</option>
+	</select>
+	
+	<br>
+	My number : <input type="text" name="mynumber" value="" max="100" step="10"/><br>
+	<label>email : </label><input type="email"  name="email" value="" /><br>
+	<label>mobile number</label><input type="text" name="mobile" value="" maxlength="10" size="20"/>
+	<label>alternate number</label><input type="number" name="altMobile"  value="987876542" size="20" disabled/>
+	<input type="submit" value="store" name="saves data" />
+	<input type="reset" value="clear"/><br/>
+	<input type="button" value="js button 1st way"/>
+	<button>js button</button>
+	</form>
+
+ </body>
+</html>
